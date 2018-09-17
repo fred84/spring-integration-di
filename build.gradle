@@ -1,0 +1,18 @@
+plugins {
+    id "java"
+    id "org.springframework.boot" version "2.0.5.RELEASE"
+    id "io.spring.dependency-management" version "1.0.6.RELEASE" apply true
+}
+
+group = 'com.github.fred84'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-webflux:2.0.5.RELEASE'
+    compile 'org.springframework.boot:spring-boot-starter-integration:2.0.5.RELEASE'
+}
